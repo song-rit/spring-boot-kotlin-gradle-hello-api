@@ -1,0 +1,11 @@
+version: '3.1'
+services:
+  hello-spring-boot-api:
+    image: hello-spring-boot-api:v1
+    container_name: openvpn
+    ports:
+     - "30000:8080"
+    restart: always
+
+networks:
+  hello-spring-boot-api: {}
